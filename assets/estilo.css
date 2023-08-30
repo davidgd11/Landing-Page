@@ -188,6 +188,9 @@ footer{
 
 
 @media screen and (max-width: 900px){
+    body{
+        background-image: url(./Imgs/Bg3.png);
+    }
 
     #head{
         background-color: transparent;
