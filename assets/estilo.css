@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    background-image: url(./Imgs/bg2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+
+
+/*Título e Imagem |(introducional)*/
+#head{
+    display: flex;
+    margin: 30px ;
+    background-color: #e1e1e1;
+    border-radius: 50px;
+}
+
+
+#title h1{
+    font-size:100px;
+    font-weight: 400;
+    color: #D3A782;
+    line-height: 0.9;
+    margin: 30px 20px 20px 320px;
+}
+.colored {
+    font-weight: 900;
+    color: #6C3D1F;
+}
+
+#img-cel{
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    transform: rotate(5deg);
+}
+
+
+
+/*Botão para links fora da página | (site e ifood)*/
+#botao a button{
+    margin: 50px 0px 20px 320px;
+    width: 300px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: transparent;
+    color: #6C3D1F;
+    transition: ease-in-out 0.4s;
+    border: 1px solid #6C3D1F;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px #6C3D1F;
+}
+
+#botao a button:hover{
+    background-color:#6C3D1F;
+    color: #D3A782;
+    box-shadow: 0px 0px 15px #D3A782;
+}
+
+
+
+
+/*Direcionamento para o cadastro*/
+#icon-arrow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#parag p{
+    font-size: 25px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6C3D1F;
+    margin-top: 70px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+
+
+
+/*Formulário de cadastro*/
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-top: 2px solid #6C3D1F;
+    border-bottom: 2px solid #6C3D1F ;
+}
+
+form h1{
+    margin: 15px;
+    color: #6C3D1F;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+form input{
+    margin-top: 8px;
+    background-color: transparent;
+    color: #6C3D1F;
+    border: 1px solid #6C3D1F;
+    border-radius: 30px;
+    padding: 10px;
+    height: 15px;
+    width: 250px;
+}
+
+form input:first-child{
+    margin-top: 50px;
+}
+
+form ::placeholder{
+    color: #6C3D1F;
+}
+
+form #p-checkbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6C3D1F;
+    font-size: 16px;
+    margin: 10px 5px;
+}
+
+form #checkbox{
+    margin: 10px 0px 10px 0px;
+    width: 50px;
+}
+
+form #enviar-button{
+    margin: 10px 5px 50px 5px;
+    background-color: #6C3D1F;
+    color: #D3A782;
+    border: 1px solid #6C3D1F;
+    border-radius: 30px;
+    padding: 5px;
+    width: 270px;
+    cursor: pointer;
+    transition: ease-in-out 0.6s
+}
+form #enviar-button:hover{
+    box-shadow: 0px 0px 15px #6C3D1F ;
+    background-color: transparent;
+    color: #6C3D1F;
+}
+
+
+/*ícones| (ig e linkedin)*/
+#icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#icons a{
+    margin: 0px 4px;
+}
+
+
+
+footer{
+    color: #6C3D1F;
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+
+
+@media screen and (max-width: 900px){
+
+    #head{
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 10px 50px 10px;
+    }
+    #title h1{
+        font-size:50px;
+        font-weight: 400;
+        color: #D3A782;
+        line-height: 0.99;
+        margin: 30px 0px 20px 0px;
+        text-align: center;
+    }
+    #img-cel{   
+        margin: 30px 0px 10px 0px;
+        width: 300px;
+        height: 470px;
+        transform: rotate(7deg);
+    }
+
+
+    #botao a button{
+        margin: 50px 0px 20px 0px;
+        width: 250px;
+        height: 30px;
+    }
+    #botao a button:first-child{
+        margin-bottom: 10px;
+    }
+    #botao a button:last-child{
+        margin-top: 5px;
+    }
+    #botao a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;  
+    }
+
+
+    #icon-arrow{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #parag p{
+        text-align: center;
+        font-size: 20px;
+        margin-top: 70px;
+        margin-bottom: 10px;
+    }
+
+
+    form{
+        margin-top: 80px;
+    }
+
+    form h1{
+        margin: 10px;
+        color: #6C3D1F;
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+    }
+    form input{
+    margin: 8px 5px 0px 5px;
+    }
+    form #p-checkbox{
+        margin: 10px 20px;
+        font-size: 12px;
+    }
+    form #enviar-button{
+        margin-bottom: 20px;
+    }
+    form #enviar-button:active{
+        box-shadow: 0px 0px 15px #6C3D1F ;
+        background-color: transparent;
+        color: #6C3D1F;
+    }
+
+
+    footer{
+        color: #6C3D1F;
+        font-size: 10px;
+        text-align: center;
+        margin: 15px 0px 5px 0px;
+    }
+   
+}
