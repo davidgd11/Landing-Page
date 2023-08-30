@@ -189,7 +189,7 @@ footer{
 
 @media screen and (max-width: 900px){
     body{
-        background-image: url(./Imgs/Bg3.png);
+        background: linear-gradient(to bottom, #ffffff,  #becfc4);
     }
 
     #head{
